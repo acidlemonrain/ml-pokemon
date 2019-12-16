@@ -231,9 +231,10 @@ export default {
         "attack_strong",
         "attack_weak_type",
         "attack_strong_type",
-              'notes'
+              'notes',
+              'attack_weak_type_new','attack_strong_type_new','attack_strong_new','attack_weak_new'
       ];
-      if (x.includes(p) || p.substr(p.length - 4) == "_new") {
+      if (x.includes(p)) {
         return false;
       } else {
         return true;

@@ -2,7 +2,7 @@
 
     <div>
 
-        <small> 战斗力 & <strong>HP</strong> (当{{pro}}={{v}})  </small>
+        <small> 战斗力 & <strong>CP_NEW</strong> (当{{pro}}={{v}})  </small>
         <div :id=id>
 
         </div>
@@ -43,7 +43,7 @@
             })]).range([0,width-padding*2])
 
             var yScale = d3.scaleLinear().domain([0,1.2*d3.max(this.dataset,function (d) {
-                return +d.cp
+                return +d.cp_new
             })]).range([height-padding*2,0])
 
 

@@ -1,7 +1,7 @@
 <template>
 
       <div>
-          <p> 战斗力和  <strong>{{pro}}</strong> 的关系 </p>
+          <p> CP_NEW  和 <strong>{{pro}}</strong> 的关系 </p>
 
           <div :id=pro>
 
@@ -55,7 +55,7 @@
 
 
             var yScale = d3.scaleLinear().domain([0,1.2*d3.max(this.dataset,function (d) {
-                return +d.cp
+                return +d.cp_new
             })]).range([height-padding*2,0])
 
 
@@ -73,7 +73,7 @@
                     }
 
                 })
-                .attr('cy',(d)=> yScale(+d.cp)+padding)
+                .attr('cy',(d)=> yScale(+d.cp_new)+padding)
                 .attr('r',5)
 
 
