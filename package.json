@@ -9,7 +9,7 @@
   "dependencies": {
     "d3": "^5.14.2",
     "d3.js": "^0.0.2-security",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "regression": "^2.0.1",
     "vue": "^2.6.10"
   },
